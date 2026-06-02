@@ -12,12 +12,12 @@ It runs as a single Node.js app: the backend exposes a few REST endpoints, the f
 - Review simple time-off requests
 - Persist changes locally in `data/store.json`
 
-## Demo
+## Links
 
-A static demo is available at https://andrerafaelf.github.io/rosterforge/.
+- Live demo: https://andrerafaelf.github.io/rosterforge/
+- Repository: https://github.com/andrerafaelf/rosterforge
 
-On GitHub Pages, changes are stored in your browser. Running locally with 
-pm start uses the Node API and JSON store.
+The live demo runs as a static GitHub Pages version, so changes are stored in your browser. Running locally with `npm start` uses the Node API and JSON store.
 
 ## Running it
 
