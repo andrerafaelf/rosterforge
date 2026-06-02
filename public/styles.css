@@ -1,0 +1,182 @@
+:root {
+	color-scheme: light;
+	font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+	background: #f4f2ed;
+	color: #1d2520;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+.shell {
+	width: min(1120px, calc(100% - 32px));
+	margin: 0 auto;
+	padding: 48px 0;
+}
+
+.hero {
+	margin-bottom: 28px;
+}
+
+.eyebrow {
+	font-size: 12px;
+	font-weight: 800;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: #0f766e;
+}
+
+h1 {
+	max-width: 820px;
+	margin: 0;
+	font-size: clamp(38px, 7vw, 82px);
+	line-height: 0.95;
+	letter-spacing: -0.03em;
+}
+
+h2 {
+	margin: 0 0 18px;
+	font-size: 20px;
+}
+
+.hero p:last-child {
+	max-width: 640px;
+	color: #56615a;
+	font-size: 18px;
+	line-height: 1.6;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 0.85fr 1.15fr;
+	gap: 18px;
+}
+
+.lower {
+	grid-template-columns: 1fr 1fr;
+	margin-top: 18px;
+}
+
+.panel {
+	background: #fffdfa;
+	border: 1px solid #d8d2c6;
+	padding: 22px;
+	box-shadow: 0 16px 50px rgb(29 37 32 / 0.08);
+}
+
+label {
+	display: grid;
+	gap: 6px;
+	margin-bottom: 12px;
+	font-size: 13px;
+	font-weight: 700;
+	color: #56615a;
+}
+
+input {
+	width: 100%;
+	border: 1px solid #c9c1b3;
+	background: #fbfaf7;
+	padding: 11px 12px;
+	font: inherit;
+}
+
+.split {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 12px;
+}
+
+button {
+	border: 0;
+	background: #0f766e;
+	color: white;
+	padding: 11px 14px;
+	font-weight: 800;
+	cursor: pointer;
+}
+
+.status {
+	min-height: 20px;
+	color: #0f766e;
+	font-size: 13px;
+}
+
+.coverage {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 12px;
+}
+
+.day,
+.row {
+	border: 1px solid #ded8ce;
+	background: #fbfaf7;
+	padding: 14px;
+}
+
+.day {
+	display: grid;
+	gap: 7px;
+}
+
+.day.warn {
+	border-color: #d97706;
+	background: #fff7ed;
+}
+
+.day small,
+.row span,
+time {
+	color: #68736b;
+}
+
+.day em {
+	font-style: normal;
+	font-weight: 800;
+	color: #0f766e;
+}
+
+.list {
+	display: grid;
+	gap: 10px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+	align-items: center;
+}
+
+.row div {
+	display: grid;
+	gap: 4px;
+}
+
+.actions {
+	display: flex;
+	gap: 8px;
+}
+
+.actions button:last-child {
+	background: #7f1d1d;
+}
+
+@media (max-width: 760px) {
+	.grid,
+	.lower,
+	.split {
+		grid-template-columns: 1fr;
+	}
+
+	.row {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}

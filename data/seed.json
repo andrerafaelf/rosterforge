@@ -1,0 +1,12 @@
+{
+  "shifts": [
+    { "id": "sh_1001", "person": "Marta", "role": "Support", "date": "2026-06-01", "start": "09:00", "end": "17:00" },
+    { "id": "sh_1002", "person": "Tiago", "role": "Backend", "date": "2026-06-01", "start": "10:00", "end": "18:00" },
+    { "id": "sh_1003", "person": "Ines", "role": "Frontend", "date": "2026-06-02", "start": "09:30", "end": "17:30" },
+    { "id": "sh_1004", "person": "Rui", "role": "Support", "date": "2026-06-03", "start": "08:00", "end": "16:00" }
+  ],
+  "requests": [
+    { "id": "req_2001", "person": "Marta", "date": "2026-06-05", "reason": "Medical appointment", "status": "pending" },
+    { "id": "req_2002", "person": "Rui", "date": "2026-06-08", "reason": "Family travel", "status": "pending" }
+  ]
+}
